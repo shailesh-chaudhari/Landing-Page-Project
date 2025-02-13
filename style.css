@@ -172,27 +172,80 @@ body {
     width: 500px;
     font-size: 18px;
     font-weight: 100;
+    margin-bottom: 35px;
+
 }
 
 .choose-section .image-carousel {
     display: flex;
     width: 100%;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    margin-bottom: 50px
+    margin-bottom: 80px;
 }
 
 .choose-section .image-carousel img {
-    border: 8px solid #f805d0;
+    border: 5px solid #f805d0;
+    box-shadow: -2em -.9em .9em #ff00f2, rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px, rgba(240, 46, 170, 0.06) 30px 30px, rgba(240, 46, 170, 0.07) 35px 35px, rgba(240, 46, 170, 0.08) 40px 40px, rgba(240, 46, 170, 0.09) 45px 45px;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .image-carousel .center-img {
-    width: 600px;
-    height: 400px;
+    width: 500px;
+    height: 300px;
 }
 
 .image-carousel .side-img {
     width: 450px;
-    height: 320px;
+    height: 250px;
+}
+
+.discover-section {
+    width: 70%;
+    margin: 100px auto;
+}
+
+.discover-card {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: #ffffff;
+    border: 1px solid #ffffff40;
+    border-radius: 7px;
+    background: #35276d;
+    backdrop-filter: blur(4px);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+.discover-card-details {
+    padding-left: 8%;
+}
+
+.discover-card img {
+    margin-top: -70px;
+    width: 50%;
+    align-self: self-start;
+}
+
+.discover-card-details .big-text {
+    font-size: 50px;
+    font-weight: 900;
+    margin: 0;
+}
+
+.discover-card-details-btn {
+    width: fit-content;
+    border: 1px solid grey;
+    padding: 10px 20px;
+    transform: skewX(-20deg);
+}
+
+.demo-cards-section {
+    width: 70%;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #ffffff;
 }

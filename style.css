@@ -16,15 +16,21 @@ body {
     color: #ffffff;
 }
 
-#logo-container {
+#logo-container a {
     display: flex;
     align-items: center;
     gap: 8px;
+    text-decoration: none;
+    color: #ffffff;
 }
 
 #logo-container img {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
+}
+
+#logo-container h2 {
+    font-size: 35px;
 }
 
 #nav-items {
@@ -236,7 +242,7 @@ body {
 
 .discover-card-details-btn {
     width: fit-content;
-    border: 1px solid grey;
+    border: 1px solid #7d63f1;
     padding: 10px 20px;
     transform: skewX(-20deg);
 }
@@ -245,7 +251,131 @@ body {
     width: 70%;
     margin: 20px auto;
     display: flex;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
     color: #ffffff;
+}
+
+.demo-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.demo-card {
+    width: 300px;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 15px;
+    border-radius: 7px;
+    border: 1px solid #ffffff23;
+    background: #35276d;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    margin: 15px;
+
+}
+
+.demo-card>img {
+    width: 100%;
+    height: 300px;
+}
+
+.demo-prof-details>img {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+}
+
+.demo-card>h5 {
+    margin: 0;
+    align-self: self-start;
+    font-size: 20px;
+}
+
+.demo-card>.demo-prof-details {
+    display: flex;
+    gap: 7px;
+    align-self: self-start;
+}
+
+.demo-card h5,
+.demo-card p {
+    margin: 0;
+}
+
+.demo-game-btn {
+    cursor: pointer;
+    padding: 10px 0;
+    width: 90%;
+    text-align: center;
+    transform: skewX(-20deg);
+    border: 1px solid #7d63f1;
+    background: rgb(45, 30, 107);
+    background: linear-gradient(45deg, #7d63f1 6%, #2c2c94 28%, #f805d0 97%);
+    color: #ffffff;
+}
+
+footer>img {
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    z-index: -1;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    color: #ffffff;
+    padding: 100px 10% 0 10%;
+    position: relative;
+}
+
+.footer-container .brands {
+    display: flex;
+}
+
+.footer-container .brands>img {
+    height: 18px;
+    width: 85px;
+    padding: 20px 50px 20px 0px;
+}
+
+
+.footer-container .about-and-links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-container .about-and-links>div {
+    width: 22%;
+    font-weight: 300;
+}
+
+.footer-container .about-and-links ul {
+    display: flex;
+    list-style-type: none;
+    flex-direction: column;
+    gap: 22px;
+    padding: 0;
+    font-weight: 300;
+}
+
+.footer-container h4 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.footer-container .copyright {
+    font-weight: 300;
+}
+
+.footer-container .copyright a {
+    color: #ffffff;
+    text-decoration: none;
 }
